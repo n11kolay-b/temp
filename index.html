@@ -40,6 +40,7 @@
           <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
           <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
           <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item">Admin Panel</a>
+          <a href="javascript:void(0)" onclick="openTab(event, 'personal')" class="header__item">LK</a>
         </div>
         <div class="header__items menu-mobile">
           <ul class="menu__list">
@@ -63,7 +64,7 @@
 
             <div class="header__item-log header__item-log-mobile">
               <button id="signup-m" class="red">SIGN UP</button>
-              <button id="lk" class=" transparent">LK</button>
+              <button href="javascript:void(0)" onclick="openTab(event, 'personal')" id="lk" class=" transparent">LK</button>
               <button id="login-m" class="login red">LOG IN</button>
             </div>
           </ul>
@@ -475,6 +476,162 @@
 
 
 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="personal" class="lk tabcontent">
+      <div class="container">
+        <h1 class="lk__title">
+          Your Profile
+        </h1>
+        <div class="lk__items">
+          <div class="lk__item lk__item-left">
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'privacy')"  class="lk__item-link">
+              <img src="img/svg/lock.svg" alt="">
+              Privacy
+            </a>
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'personal-k')"  class="lk__item-link">
+              <img src="img/svg/person.svg" alt="">
+              Personal info
+            </a>
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'connections')"  class="lk__item-link">
+              <img src="img/svg/contact.svg" alt="">
+              Connections
+            </a>
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'auth')"  class="lk__item-link">
+              <img src="img/svg/admin.svg" alt="">
+              2FA Authentification
+            </a>
+            <a href="javascript:void(0)" onclick="openTabPersonal(event, 'dev')"  class="lk__item-link">
+              <img src="img/svg/admin.svg" alt="">
+              In developing
+            </a>
+          </div>
+          <div class="lk__item lk__item-right">
+            <div class="lk__tab-privacy tabcontent-personal" id="privacy">
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change password:</h3>
+                <form class="lk__item-form" action="#">
+  
+                  <div class="lk__item-input input-box">
+  
+                    <input type="password" placeholder="Your password" />
+                  </div>
+                  <div class="lk__item-input input-box">
+  
+                    <input type="password" placeholder="Your new password" />
+                  </div>
+  
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change email:</h3>
+                <form class="lk__item-form" action="#">
+  
+                  <div class="lk__item-input input-box">
+  
+                    <input type="email" placeholder="Your email" />
+                  </div>
+                  <div class="lk__item-input input-box">
+  
+                    <input type="email" placeholder="Your new email" />
+                  </div>
+  
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="lk__tab-personal tabcontent-personal" id="personal-k" style="display: none;">
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change password:</h3>
+                <form class="lk__item-form" action="#">
+  
+                  <div class="lk__item-input lk__item-input-select">
+                    <input type="text" placeholder="Select" name="date">
+                  </div>
+  
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+              <div class="lk__tab-privacy-item">
+                <h3 class="lk__item-title">Change full name:</h3>
+                <form class="lk__item-form" action="#">
+  
+                  <div class="lk__item-input input-box">
+  
+                    <input type="text" placeholder="Your first name" />
+                  </div>
+                  <div class="lk__item-input input-box">
+  
+                    <input type="password" placeholder="Your second name" />
+                  </div>
+  
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+            
+            </div>
+            <div class="lk__tab-connections tabcontent-personal" id="connections" style="display: none;">
+              <div class="lk__tab-conntections-item">
+                <span>Twitch</span>
+                <div class="lk__item-btn admin__panel-btn">
+                  <input type="button" value="Connect" />
+                </div>
+              </div>
+              <div class="lk__tab-conntections-item">
+                <span>Youtube</span>
+                <div class="lk__item-btn admin__panel-btn">
+                  <input type="button" value="Connect" />
+                </div>
+              </div>
+              <div class="lk__tab-conntections-item">
+                <span>Google</span>
+                <div class="lk__item-btn admin__panel-btn">
+                  <input type="button" value="Connect" />
+                </div>
+              </div>
+              <div class="lk__tab-conntections-item">
+                <span>Beatport</span>
+                <div class="lk__item-btn admin__panel-btn">
+                  <input type="button" value="Connect" />
+                </div>
+              </div>
+            </div>
+            <div class="lk__tab-auth tabcontent-personal" id="auth" style="display: none;">
+            
+              <div class="lk__tab-auth-item">
+                <h3 class="lk__item-title">Change password:</h3>
+                <form class="lk__item-form" action="#">
+  
+                  <div class="lk__item-input input-box">
+  
+                    <input type="text" placeholder="Google 2FA Code" />
+                  </div>
+                  <div class="lk__item-input input-box">
+  
+                    <input type="email" placeholder="Your email again" />
+                  </div>
+  
+                  <div class="lk__item-btn admin__panel-btn">
+                    <input type="button" value="Apply*" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="lk__tab-auth tabcontent-personal" id="dev" style="display: none;">NULL</div>
+            <div class="lk__tab-info">
+              When you click the Send button, a letter is sent to your email*
+            </div>
           </div>
         </div>
       </div>
