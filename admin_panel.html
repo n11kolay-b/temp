@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroPunk - Admin Panel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__items">
+            <div class="header__item-logo">
+
+              <img src="img/svg/logo.svg" alt="" class="">
+            </div>
+
+            <div class="header__item-log">
+              <button id="signup" class="signup">SIGN UP</button>
+              <button id="login" class="login">LOG IN</button>
+            </div>
+            <div class="header__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__items menu">
+            <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item"
+              id="defaultOpen">Music</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
+            <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
+          </div>
+          <div class="header__items menu-mobile">
+            <ul class="menu__list">
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'music')" class="header__item"
+                  id="defaultOpen">Music</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
+              </li>
+              <li class="menu__item">
+
+                <a href="" class="header__item admin-icon">Admin panel(only admins)</a>
+              </li>
+
+
+              <div class="header__item-log header__item-log-mobile">
+                <button id="signup" class="red">SIGN UP</button>
+                <button id="lk" class="red">LK</button>
+                <button id="login" class="login red">LOG IN</button>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="music" class="music tabcontent">
+      <div class="container">
+        <h1 class="music__title">
+          Music
+        </h1>
+        <div class="music__cards">
+
+
+          <!-- Slider main container -->
+          <div class="swiper swiper-music">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="music__card">
+                  <div class="music__card-image">
+                    <img src="img/music-logo/01.png" alt="">
+                  </div>
+                  <div class="music__card-info">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <div class="music__card-musics">
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                      <div class="music__card-music">
+                        <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                        <div class="music__card-music-info">
+
+                          <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                          <h5 class="music__card-music-subtitle">GYDRA</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="music__card-info-mb">
+                    <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+                    <h3 class="music__card-subtitle">GYDRA</h3>
+                    <a href="" class="btn red">More info</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+
+
+
+
+          <!-- <div class="music__card">
+            <div class="music__card-image">
+              <img src="img/music-logo/01.png" alt="">
+            </div>
+            <div class="music__card-info">
+              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+              <h3 class="music__card-subtitle">GYDRA</h3>
+              <div class="music__card-musics">
+                <div class="music__card-music">
+                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                  <div class="music__card-music-info">
+
+                    <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                    <h5 class="music__card-music-subtitle">GYDRA</h5>
+                  </div>
+                </div>
+                <div class="music__card-music">
+                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                  <div class="music__card-music-info">
+
+                    <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                    <h5 class="music__card-music-subtitle">GYDRA</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="music__card-info-mb">
+              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+              <h3 class="music__card-subtitle">GYDRA</h3>
+              <a href="" class="btn">More info</a>
+            </div>
+          </div>
+          <div class="music__card">
+            <div class="music__card-image">
+              <img src="img/music-logo/01.png" alt="">
+            </div>
+            <div class="music__card-info">
+              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+              <h3 class="music__card-subtitle">GYDRA</h3>
+              <div class="music__card-musics">
+                <div class="music__card-music">
+                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                  <div class="music__card-music-info">
+
+                    <h4 class="music__card-music-title">Frostbolt (Irontype Remix)</h4>
+                    <h5 class="music__card-music-subtitle">GYDRA</h5>
+                  </div>
+                </div>
+                <div class="music__card-music">
+                  <img src="img/music-logo/01.png" alt="" class="music__card-music-cover">
+                  <div class="music__card-music-info">
+
+                    <h4 class="music__card-music-title">Alpha (Grinder Remix)</h4>
+                    <h5 class="music__card-music-subtitle">GYDRA</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="music__card-info-mb">
+              <h2 class="music__card-title">GYDRAREMIXES PART 1</h2>
+              <h3 class="music__card-subtitle">GYDRA</h3>
+              <a href="" class="btn">More info</a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+    <section id="events" class="events tabcontent">
+      <div class="container">
+        <h1 class="events__title">Events</h1>
+        <div class="events__info">
+          <div class="events__info-bage">Festival</div>
+          <h2 class="events__info-title">NEUROPUNK FESTIVAL @ WERK, KAZAN</h2>
+          <h3 class="events__info-subtitle">WERK / KAZAN [RUSSIA] / 29.04.2024 </h3>
+          <p class="events__info-date">COMING SOON</p>
+          <div class="events__info-btns">
+            <a href="#" class="events__info-btn btn red">EVENT DETAILS</a>
+            <a href="#" class="events__info-btn btn transparent">
+              <img src="/img/svg/buy.svg" alt="">
+              BUY TICKETS
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact tabcontent">
+      <div class="container">
+        <h1 class="contact__title">Contact</h1>
+        <div class="contact__form">
+          <form class="contact-form" action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Subject" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Message" rows="1"></textarea>
+            </div>
+            <div class="form-send btn">
+              <input type="button" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="admin">
+      <div class="container">
+        <h1 class="admin__title">
+          Admin Panel
+        </h1>
+        <div class="admin__panel">
+          <div class="admin__panel-items">
+
+
+            
+           <div class="admin__panel-column">
+
+            <div class="admin__panel-item">
+
+              <h3 class="admin__panel-item-title">Select category...</h3>
+              <form class="admin__panel-form" action="#">
+                
+                <div class="admin__panel-input">
+                  <select name="event" id="">
+                    <option value="Tracks">Tracks</option>
+                    <option value="Events">Events</option>
+                    <option value="Contacts">Contacts</option>
+                    <option value="New category">New category</option>
+                  </select>
+                </div>
+
+                <div class="admin__panel-btn">
+                  <input type="button" value="Upload" />
+                </div>
+              </form>
+
+            </div>
+       
+           </div>
+
+           <div class="admin__panel-column admin__panel-column-artist">
+            <div class="admin__panel-item">
+
+              <h3 class="admin__panel-item-title">New Artist</h3>
+              <form class="admin__panel-form" action="#">
+                
+                <div class="admin__panel-input">
+             
+                     <input type="text" placeholder="Soundcloud ID" />
+                </div>
+
+                <div class="admin__panel-btn">
+                  <input type="button" value="Add" />
+                </div>
+              </form>
+
+            </div>
+            <div class="admin__panel-item">
+
+              <h3 class="admin__panel-item-title">Delete Artist</h3>
+              <form class="admin__panel-form" action="#">
+                
+                <div class="admin__panel-input">
+             
+                     <input type="text" placeholder="Soundcloud ID" />
+                </div>
+
+                <div class="admin__panel-btn">
+                  <input type="button" value="Delete" />
+                </div>
+              </form>
+
+            </div>
+           </div>
+            
+           <div class="admin__panel-column">
+
+
+            <div class="admin__panel-item">
+
+              <h3 class="admin__panel-item-title">New Event</h3>
+              <form class="admin__panel-form" action="#">
+                
+                <div class="admin__panel-input">
+             
+                     <input type="text" name="place-name" placeholder="Place name" />
+                </div>
+                
+                <div class="admin__panel-input">
+             
+                     <input type="date" name="date"  placeholder="Date" />
+                </div>
+                
+                <div class="admin__panel-input">
+             
+                     <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
+                </div>
+
+                <div class="admin__panel-btn">
+                  <input type="button" value="Upload" />
+                </div>
+              </form>
+
+            </div>
+         
+            <div class="admin__panel-item">
+
+              <h3 class="admin__panel-item-title">New Release</h3>
+              <form class="admin__panel-form" action="#">
+                
+                <div class="admin__panel-input">
+             
+                  <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
+                </div>
+                
+                <div class="admin__panel-input">
+             
+                     <input type="text" name="tracks-name" placeholder="Tracks Name" />
+                </div>
+                
+                <div class="admin__panel-input">
+             
+                  <input type="text" name="album-name" placeholder="Album/EP Name" />
+                </div>
+                
+                <div class="admin__panel-input">
+             
+                  <input type="file" name="upload-name" placeholder="Upload Poster" />
+                </div>
+
+                <div class="admin__panel-btn">
+                  <input type="button" value="Upload" />
+                </div>
+              </form>
+
+            </div>
+         
+           </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__info">
+          <div class="footer__text">
+            <p>
+              © Ⓟ 2023 NEUROPUNK RECORDS</p>
+            <p>
+              (ИП БЕСМАН Е.А.)
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="" class="footer__link">
+              <img src="img/svg/soundcloud.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/facebook.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/youtube.svg" alt="">
+            </a>
+            <a href="" class="footer__link">
+              <img src="img/svg/vk.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="signUp" class="modal modal-signup">
+
+    <!-- Модальное содержание -->
+    <div class="modal-content">
+
+      <p>Sign Up</p> <span class="close"></span>
+      <form class="contact-form" action="#">
+
+        <div class="input-box">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Soundcloud ID" />
+        </div>
+        <div class="form-send btn">
+          <input type="button" value="SIGN UP" />
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+  <div id="logIn" class="modal modal-login">
+
+    <!-- Модальное содержание -->
+    <div class="modal-content">
+
+      <p>Log in</p> <span class="close"></span>
+      <form class="login-form" action="#">
+        <div class="input-box">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Password" />
+        </div>
+
+        <div class="form-send btn">
+          <input type="button" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>
