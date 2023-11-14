@@ -42,14 +42,7 @@ const swiperMusic = new Swiper('.swiper-music', {
     prevEl: '.swiper-button-prev',
   },
 });
-const swiperAdmin = new Swiper('.swiper-admin', {
 
-  spaceBetween: 100,  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-admin-button-next',
-    prevEl: '.swiper-admin-button-prev',
-  },
-});
 
 
 let menuBtn = document.querySelector('.header__menu');
@@ -105,3 +98,25 @@ function openTab(event, name) {
   document.getElementById(name).style.display = "block";
   event.currentTarget.className += " tab-active";
 } 
+
+
+const swiperAdmin = new Swiper('.swiper-admin', {
+
+  navigation: {
+    nextEl: '.swiper-admin-button-next',
+    prevEl: '.swiper-admin-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    870: {
+      slidesPerView: 1,
+      enabled: true,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 1,
+      enabled: false,
+      spaceBetween: 40
+    }
+  }
+});

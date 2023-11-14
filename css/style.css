@@ -483,9 +483,38 @@ text-align: left;
 .swiper-button-prev, .swiper-button-next {
   display: none;
 }
+
+
+.swiper-slide-admin {
+  width: auto !important;
+  margin-right: 0px !important;
+}
+.swiper-admin .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+}
 @media (max-width:880px) {
   .swiper-button-prev, .swiper-button-next {
     display: flex;
+  }
+  .swiper-slide-admin {
+    width: 100% !important;
+    margin-right: 0px !important;
+  }
+  .admin__panel-items {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .swiper-admin-button-prev, .swiper-admin-button-next {
+    top: var(--swiper-navigation-top-offset,25%) !important;
+  }
+  .admin__panel-item {
+    margin: auto;
+  }
+  .swiper-admin .swiper-wrapper {
+    flex-wrap: nowrap;
   }
   .music__card {
     width: 60%;
@@ -721,6 +750,8 @@ text-align: left;
 .container {
 }
 .admin__title {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .admin__panel {
 }
@@ -728,11 +759,11 @@ text-align: left;
 }
 .admin__panel-column:first-child {
 }
-.admin__panel-column:last-child {
+/* .admin__panel-column:last-child {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
+} */
 .admin__panel-column-artist .admin__panel-item {
   margin-bottom: 50px;
 }
@@ -789,6 +820,7 @@ border-radius: 10px;
   border: 3px solid #A8A8A8;
   border-radius: 4px;
   margin-top: 17px;
+  position: relative;
 }
 
 .admin__panel-input * {
@@ -806,13 +838,41 @@ input[type=file] {
 	display: block;
 	width: 100%;
 }
+input[type=date] {
+	display: block;
+	width: 100%;
+}
+input[type=button] {
+  cursor: pointer;
+}
 .admin__panel-input select {
-
+  width: 100%;
+}
+.input-upload {
+  font-family: Myanmar Khyay;
+font-size: 26px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-transform: none;
+position: relative;
+color: #aaa;
+width: 100%;
+display: block;
 }
 
 
-
-
+.input-upload::after {
+  content:'';
+  width: 50px;
+  height: 50px;
+  display: block;
+  right:  0;
+  top: 0;
+  margin-right: 10px;
+  position: absolute;
+  background-image: url('../img/svg/upload.svg');
+}
 
 
 
