@@ -39,6 +39,7 @@
           <a href="javascript:void(0)" onclick="openTab(event, 'music')"  class="header__item" id="defaultOpen">Music</a>
           <a href="javascript:void(0)" onclick="openTab(event, 'events')" class="header__item">Events</a>
           <a href="javascript:void(0)" onclick="openTab(event, 'contact')" class="header__item">Contact</a>
+          <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item">Admin Panel</a>
         </div>
         <div class="header__items menu-mobile">
           <ul class="menu__list">
@@ -56,14 +57,14 @@
             </li>
             <li class="menu__item">
 
-              <a href="" class="header__item admin-icon">Admin panel(only admins)</a>
+              <a href="javascript:void(0)" onclick="openTab(event, 'admin')" class="header__item admin-icon">Admin panel(only admins)</a>
             </li>
 
 
             <div class="header__item-log header__item-log-mobile">
-              <button id="signup" class="red">SIGN UP</button>
-              <button id="lk" class="red">LK</button>
-              <button id="login" class="login red">LOG IN</button>
+              <button id="signup-m" class="red">SIGN UP</button>
+              <button id="lk" class=" transparent">LK</button>
+              <button id="login-m" class="login red">LOG IN</button>
             </div>
           </ul>
     
@@ -307,6 +308,178 @@
         </div>
       </div>
     </section>
+
+    <section id="admin" class="admin tabcontent">
+      <div class="container">
+        <h1 class="admin__title">
+          Admin Panel
+        </h1>
+        <div class="admin__panel">
+          <div class="admin__panel-items">
+
+            <div class="swiper swiper-admin">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide-admin">
+
+                  <div class="admin__panel-column">
+
+                    <div class="admin__panel-item">
+      
+                      <h3 class="admin__panel-item-title">Select category...</h3>
+                      <form class="admin__panel-form" action="#">
+      
+                        <div class="admin__panel-input">
+                          <select name="event" id="">
+                            <option value="Tracks" selected>Tracks</option>
+                            <option value="Events">Events</option>
+                            <option value="Contacts">Contacts</option>
+                            <option value="New category">New category</option>
+                          </select>
+                        </div>
+      
+                        <div class="admin__panel-btn">
+                          <input type="button" value="Upload" />
+                        </div>
+                      </form>
+      
+                    </div>
+      
+                  </div>
+      
+
+                </div>
+                <div class="swiper-slide swiper-slide-admin">
+               
+            <div class="admin__panel-column admin__panel-column-artist">
+              <div class="admin__panel-item">
+
+                <h3 class="admin__panel-item-title">New Artist</h3>
+                <form class="admin__panel-form" action="#">
+
+                  <div class="admin__panel-input">
+
+                    <input type="text" placeholder="Soundcloud ID" />
+                  </div>
+
+                  <div class="admin__panel-btn">
+                    <input type="button" value="Add" />
+                  </div>
+                </form>
+
+              </div>
+              <div class="admin__panel-item">
+
+                <h3 class="admin__panel-item-title">Delete Artist</h3>
+                <form class="admin__panel-form" action="#">
+
+                  <div class="admin__panel-input">
+
+                    <input type="text" placeholder="Soundcloud ID" />
+                  </div>
+
+                  <div class="admin__panel-btn">
+                    <input type="button" value="Delete" />
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+                </div>
+                <div class="swiper-slide swiper-slide-admin">
+              
+
+            <div class="admin__panel-column">
+
+
+
+              <div class="admin__panel-item">
+
+                <h3 class="admin__panel-item-title">New Event</h3>
+                <form class="admin__panel-form" action="#">
+
+                  <div class="admin__panel-input">
+
+                    <input type="text" name="place-name" placeholder="Place name" />
+                  </div>
+
+                  <div class="admin__panel-input">
+
+                    <input type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')"
+                      name="date" placeholder="Date" />
+                  </div>
+
+                  <div class="admin__panel-input">
+
+                    <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
+                  </div>
+
+                  <div class="admin__panel-btn">
+                    <input type="button" value="Upload" />
+                  </div>
+                </form>
+
+              </div>
+            </div>
+                </div>
+                <div class="swiper-slide swiper-slide-admin">
+
+         
+            
+                  <div class="admin__panel-column  admin__panel-column-artist">
+                    <div class="admin__panel-item">
+      
+                      <h3 class="admin__panel-item-title">New Release</h3>
+                      <form class="admin__panel-form" action="#">
+      
+                        <div class="admin__panel-input">
+      
+                          <input type="text" name="artist-id" placeholder="Artist Soundcloud ID" />
+                        </div>
+      
+                        <div class="admin__panel-input">
+      
+                          <input type="text" name="tracks-name" placeholder="Tracks Name" />
+                        </div>
+      
+                        <div class="admin__panel-input">
+      
+                          <input type="text" name="album-name" placeholder="Album/EP Name" />
+                        </div>
+      
+                        <div class="admin__panel-input">
+                          <span class="input-upload">Upload poster</span>
+                          <input style="opacity: 0;
+                          position: absolute;
+                          top: 0;
+                          height: 100%;" type="file" name="upload-name" placeholder="Upload Poster" />
+                        </div>
+      
+                        <div class="admin__panel-btn">
+                          <input type="button" value="Upload" />
+                        </div>
+                      </form>
+      
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-admin-button-prev"></div>
+              <div class="swiper-button-next swiper-admin-button-next"></div>
+
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__info">
@@ -354,7 +527,7 @@
           <input type="text" placeholder="Soundcloud ID" />
         </div>
         <div class="form-send btn">
-          <input type="button" value="SIGN UP" />
+          <input type="button" value="Sign Up" />
         </div>
       </form>
     </div>

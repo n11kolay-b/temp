@@ -160,13 +160,60 @@ h1 {
   border: 1px solid transparent;
   border-radius: 10px;
 }
+.header__item {
+  transition: all ease-in-out .3s;
+}
+.header__item:hover {
+  color: #C41A2B;
+  transition: all ease-in-out .3s;
+}
+
+.form-send input {
+  
+  border: 2px solid transparent;
+  transition: all ease-in-out .3s;
+}
+
+.form-send input:hover {
+  color: #C41A2B;
+  background-color: transparent;
+  border: 2px solid #C41A2B;
+  transition: all ease-in-out .3s;
+}
 .signup {
   background-color: #C41A2B;
+  border: 2px solid transparent;
   margin-right: 20px;
+  transition: all ease-in-out .3s;
+}
+.admin__panel-btn input {
+
+  transition: all ease-in-out .3s;
+  border: 2px solid transparent;
+}
+.admin__panel-btn input:hover {
+  transition: all ease-in-out .3s;
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+.signup:hover {
+  background-color: transparent;
+  color: #C41A2B;
+  
+  transition: all ease-in-out .3s;
+  border: 2px solid #C41A2B!important;
 }
 .login {
   background-color: #000;
   border: 2px solid #fff !important;
+  
+  transition: all ease-in-out .3s;
+}
+.login:hover {
+  transition: all ease-in-out .3s;
+  background: #fff ;
+  color: #000;
 }
 .header__item {
 }
@@ -341,6 +388,7 @@ padding: 5px 4px;
 }
 .transparent {
   border: 1px solid #fff !important;
+  background: none;
 }
 .events__info-btn  {
   margin-left: 37px;

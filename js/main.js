@@ -3,6 +3,8 @@ var modalLogin = document.getElementById("logIn");
 let body = document.querySelector('body')
 let mainBlur = document.querySelector('.main')
 
+var btnSignM = document.getElementById("signup-m");
+var btnLoginM = document.getElementById("login-m");
 var btnSign = document.getElementById("signup");
 var btnLogin = document.getElementById("login");
 
@@ -14,6 +16,17 @@ btnSign.onclick = function() {
   mainBlur.classList.add('blur')
 }
 btnLogin.onclick = function() {
+  modalLogin.style.display = "block";
+  body.classList.add('active-modal');
+  
+  mainBlur.classList.add('blur')
+}
+btnSignM.onclick = function() {
+  modalSign.style.display = "block";
+  body.classList.add('active-modal');
+  mainBlur.classList.add('blur')
+}
+btnLoginM.onclick = function() {
   modalLogin.style.display = "block";
   body.classList.add('active-modal');
   
